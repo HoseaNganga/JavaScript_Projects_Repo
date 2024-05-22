@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+  padding: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.holdContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+h1 {
+  color: red;
+}
+
+.choices button {
+  font-size: 7.5rem;
+  border-radius: 250px;
+  background-color: rgba(0, 0, 255, 0.781);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.choices button:hover {
+  background-color: rgba(0, 0, 255, 0.445);
+}
+
+.playerChoiceDisplay,
+.computerChoiceDisplay {
+  font-size: 1.8rem;
+}
+
+.gameResultDisplay {
+  font-size: 2rem;
+}
+
+.score {
+  font-size: 1.5rem;
+}
+
+.playerScoreDisplay,
+.greenText {
+  color: green;
+}
+.computerScoreDisplay,
+.redText {
+  color: red;
+}
