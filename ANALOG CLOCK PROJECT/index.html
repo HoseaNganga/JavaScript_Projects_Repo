@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page highlights a simple interactive and dynamic Analog Clock created using HTML,CSS and Vanilla Javascript">
+    <meta name="author" content="Hosea Nganga">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="images/icons8-clock-100.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Analog Clock</title>
+</head>
+<body>
+    <div class="holdContainer">
+        <div class="outerClockContainer">
+            <div class="innerClockContainer">
+                <div class="clock">
+                    <label style="--i:1" class="number number1"><span class="span1">1</span></label>
+                    <label style="--i:2" class="number number2"><span class="span2">2</span></label>
+                    <label style="--i:3" class="number number3"><span class="span3">3</span></label>
+                    <label style="--i:4" class="number number4"><span class="span4">4</span></label>
+                    <label style="--i:5" class="number number5"><span class="span5">5</span></label>
+                    <label style="--i:6" class="number number6"><span class="span6">6</span></label>
+                    <label style="--i:7" class="number number7"><span class="span7">7</span></label>
+                    <label style="--i:8" class="number number8"><span class="span8">8</span></label>
+                    <label style="--i:9" class="number number9"><span class="span9">9</span></label>
+                    <label style="--i:10" class="number number10"><span class="span10">10</span></label>
+                    <label style="--i:11" class="number number11"><span class="span11">11</span></label>
+                    <label style="--i:12" class="number number12"><span class="span12">12</span></label>
+                    <div class="indicators">
+                        <div class="second  hand" id="secondHand"></div>
+                        <div class="minute  hand" id="minuteHand"></div>
+                        <div class="hour  hand" id="hourHand"></div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <button class="toggle" id="toggleButton">Dark Mode</button>
+</body>
+</html>

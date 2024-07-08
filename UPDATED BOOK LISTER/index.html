@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page illustrates a simple dynamic stopwatch designed using simple HTML,CSS and Vanilla Javascript">
+    <meta name="author" content="Hosea Nganga">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Book Lister App</title>
+</head>
+<body class="body">
+    <div class="holdContainer">
+        <div class="container1">
+            <h2 class="header">My <span>Book</span> lister</h2>
+            <form class="filter" id="filterForm">
+                <input type="text" class="submit" id="filterInput" placeholder="Search any item...." autocomplete="off">
+            </form>
+        </div>
+        <h3>Add Book</h3>
+        <div class="container2">
+            <form class="add" id="addBookForm">
+                <input type="text" class="addInput" id="addBookInput" placeholder="Add your favorite Book...." autocomplete="off">
+                <input type="submit" value="submit" class="addItem" id="submitButton">
+            </form>
+        </div>
+        <h4>Book List</h4>
+        <ul class="itemList" id="listItems">
+            <!-- <li class="item">Book 1 <button class="delete">X</button></li>
+            <li class="item">Book 2<button class="delete">X</button></li>
+            <li class="item">Book 3<button class="delete">X</button></li> -->
+        </ul>
+    </div>
+</body>
+</html>

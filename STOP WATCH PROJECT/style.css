@@ -1,0 +1,105 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+
+/* UNIVERSAL RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* GENERAL STYLES */
+html{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+button{
+    font-family: inherit;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.body{
+    position: relative;
+}
+
+.body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(/images/backgroundimage2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.7;
+}
+.holdContainer{
+    position: relative;
+    opacity: 1;
+}
+
+.holdContainer .holdbox{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.holdbox div{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 6px 6px black;
+    display: grid;
+    place-items: center;
+    flex-wrap: wrap;
+}
+
+.number{
+    font-size: 1.8em;
+    font-weight: bolder;
+    color: white;
+}
+
+.text{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.buttons{
+    text-align: center;
+    
+}
+
+.buttons button{
+    padding: 0.5rem 2.5rem;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.start{
+    background-color: green;
+}
+
+.stop{
+    background-color: red;
+}
+
+.reset{
+    background-color: yellow;
+}
+

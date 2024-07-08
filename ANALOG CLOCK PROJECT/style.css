@@ -1,0 +1,165 @@
+/* IMPORT GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+/* UNIVERSAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIBALES */
+:root {
+  /* COLORS */
+  --PRIMARYCOLOR: black;
+  --BACKGROUNDCOLOR: white;
+  --SECONDARYBACKGROUNDCOLOR: #d3d3d3;
+  --SECONDSECONDARYBACKGROUNDCOLOR: #a9a9a9;
+}
+
+/* GENERAL STYLES */
+html {
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+body {
+  background-color: var(--BACKGROUNDCOLOR);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.dark {
+  --PRIMARYCOLOR: white;
+  --BACKGROUNDCOLOR: black;
+  --SECONDARYBACKGROUNDCOLOR: #d3d3d3;
+  --SECONDSECONDARYBACKGROUNDCOLOR: #a9a9a9;
+}
+
+.holdContainer {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.holdContainer .outerClockContainer {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.outerClockContainer .innerClockContainer {
+  width: 400px;
+  height: 400px;
+  background-color: var(--SECONDARYBACKGROUNDCOLOR);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerClockContainer .clock {
+  width: 320px;
+  height: 320px;
+  background-color: var(--BACKGROUNDCOLOR);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  outline: 5px dotted var(--PRIMARYCOLOR);
+  outline-offset: -2.6rem;
+}
+
+.clock label {
+  position: absolute;
+  inset: 10px;
+  max-width: 100%;
+  transform: rotate(calc(var(--i) * (360deg / 12)));
+  text-align: center;
+}
+
+.clock span {
+  max-width: 100%;
+  transform: rotate(calc(var(--i) * (-360deg / 12)));
+  display: inline-block;
+  color: var(--PRIMARYCOLOR);
+}
+
+.clock .indicators {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 15;
+  outline: 1px dotted var(--PRIMARYCOLOR);
+  outline-offset: 0.3rem;
+}
+
+.indicators .hand {
+  transform: translateX(7px);
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 0;
+  z-index: 10;
+}
+.indicators .second {
+  width: 3px;
+  height: 135px;
+  background-color: red;
+}
+.indicators .minute {
+  width: 5px;
+  height: 120px;
+  background-color: var(--PRIMARYCOLOR);
+}
+.indicators .hour {
+  width: 5px;
+  height: 105px;
+  background-color: green;
+}
+
+button {
+  font-family: inherit;
+  margin-left: 5rem;
+  background-color: var(--PRIMARYCOLOR);
+  color: var(--BACKGROUNDCOLOR);
+  border: none;
+  outline: none;
+  padding: 0.3rem 2.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* MEDIA SCREEN: MAX-WIDTH: 425PX */
+@media screen and (max-width: 425px) {
+  .outerClockContainer {
+    width: 400px;
+    height: 400px;
+  }
+  .innerClockContainer {
+    max-width: 275px;
+    max-height: 275px;
+  }
+  .clock {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .second {
+    max-height: 70px;
+    max-width: 2px;
+  }
+  .minute {
+    max-height: 60px;
+    max-width: 3px;
+  }
+  .hour {
+    max-height: 50px;
+    max-width: 4px;
+  }
+}
