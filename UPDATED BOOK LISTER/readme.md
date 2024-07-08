@@ -2,6 +2,27 @@
 
 This project showcases a simple dynamic book lister created using HTML, CSS, and Vanilla JavaScript. It allows users to add, delete, and filter books, and it persists data using local storage.
 
+## Table of Contents
+
+- [Screenshot](#screenshot)
+- [Features](#features)
+- [How to Use](#how-to-use)
+- [Project Structure](#project-structure)
+- [Local Storage](#local-storage)
+- [Development](#development)
+- [License](#license)
+- [Author](#author)
+
+## Screenshot
+
+1. Screenshot1
+
+<img src="screenshots/screenshot1.PNG" width="350px">
+
+2. Screenshot2
+
+<img src="screenshots/screenshot2.PNG" width="350px">
+
 ## Features
 
 - **Add Book:** Add your favorite books to the list.
