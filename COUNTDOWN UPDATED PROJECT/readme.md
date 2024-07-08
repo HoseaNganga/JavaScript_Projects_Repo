@@ -6,6 +6,27 @@ This project illustrates a simple interactive CountDown application created usin
 
 The CountDown App provides a visual countdown to a specified date (January 31, 2024, in this case). It displays the remaining days, hours, minutes, and seconds in a clear and user-friendly manner.
 
+## Table of Contents
+
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [How to Use](#how-to-use)
+- [Project Structure](#project-structure)
+- [Countdown Functionality](#countdown-functionality)
+- [Development](#development)
+- [License](#license)
+- [Author](#author)
+
+## Screenshots
+
+1.Screenshot 1
+
+<img src="screenshots/screenshot1.PNG" width="350px">
+
+2.Screenshot 2
+
+<img src="screenshots/screenshot2.PNG" width="350px">
+
 ## Features
 
 - Dynamic countdown to a specified date.
